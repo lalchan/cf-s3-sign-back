@@ -13,6 +13,16 @@ export class Config {
 	static readonly nodeEnv: string = this.parseString(
 		this.getFromEnv('NODE_ENV'),
 	);
+	static readonly aws = {
+		credentials: {
+			accessKeyId: this.parseString(this.getFromEnv('AWS_ACCESS_KEY_ID')),
+			secretAccessKey: this.parseString(
+				this.getFromEnv('AWS_SECRET_ACCESS_KEY'),
+			),
+		},
+		bucket: this.parseString(this.getFromEnv('AWS_BUCKET')),
+		endpoint: this.parseString(this.getFromEnv('AWS_ENDPOINT')),
+	}
 
 	private static getFromEnv(key: string) {
 		return process.env[key];
