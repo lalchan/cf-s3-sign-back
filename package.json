@@ -1,0 +1,36 @@
+{
+  "name": "backend-template-ts-mongoose",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node dist/index",
+    "build": "tsc",
+    "dev": "ts-node-dev src/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lalchan/backend-template-ts-mongoose.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lalchan/backend-template-ts-mongoose/issues"
+  },
+  "homepage": "https://github.com/lalchan/backend-template-ts-mongoose#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.16",
+    "@types/morgan": "^1.9.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@typegoose/typegoose": "^10.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0",
+    "morgan": "^1.10.0"
+  }
+}
